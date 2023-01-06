@@ -16,6 +16,8 @@ import ansicon_plus
 
 csi = ansicon_plus.ANSI_CSI()
 csi.print(csi.clear(2), csi.color((255,0,255)), csi.color((0,127,127), bg=True),
-          "The screen is clear and magenta\n", flush=True)
+          "The screen is clear and magenta\n",
+          csi.resetmodes(),
+          flush=True)
 ```
  
