@@ -10,4 +10,12 @@ Known bugs:
  
  To install, simply download this project and move or copy the ansicon_plus.py to a directory in your python path or project.
  
+ Usage:
+ 
+ import ansicon_plus
+ 
+ csi = ansicon_plus.ANSI_CSI().csi
+ csi.print(csi.clear(), csi.color((255,0,255)), csi.color((0,127,127), bg=True))
+ print("The screen is clear and magenta")
+ 
  
